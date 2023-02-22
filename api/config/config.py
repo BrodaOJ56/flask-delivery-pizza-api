@@ -15,16 +15,16 @@ if uri.startswith("postgres://"):
 
 
 class Config:
-    SECRET_KEY = config('SECRET_KEY', 'secret')
+    SECRET_KEY = config('SECRET_KEY', 'Secret')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=30)
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
     JWT_SECRET_KEY = config('JWT_SECRET_KEY')
 
 class DevConfig(Config):
-    DEBUG = config('DEBUG', cast=bool)
-    SQLALCHEMY_ECHO = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+    SQLALCHEMY_DATABASE_URI="sqlite:///"+os.path.join(BASE_DIR,'db.sqlite3')
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    SQLALCHEMY_ECHO=True
     DEBUG=True
 
 class TestConfig(Config):
@@ -34,13 +34,13 @@ class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 class ProdConfig(Config):
-    SQLALCHEMY_ECHO = True
-    SQLALCHEMY_DATABASE_URI = uri
+    SQLALCHEMY_DATABASE_URI=uri
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
     DEBUG=config('DEBUG',cast=bool)
 
 
 config_dict = {
     'dev': DevConfig,
-    'prod': ProdConfig,
+    'production': ProdConfig,
     'test': TestConfig
 }
