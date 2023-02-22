@@ -5,13 +5,12 @@
 
 Clone the project Repository
 ```
-git clone https://github.com/BrodaOJ56/flask-delivery-pizza-api/tree/main/api
+git clone https://github.com/BrodaOJ56/flask-delivery-pizza-api/
 ```
 
 Enter the project folder and create a virtual environment
 ``` 
-$ cd https://github.com/BrodaOJ56/flask-delivery-pizza-api/tree/main/api
-
+$ cd https://github.com/BrodaOJ56/flask-delivery-pizza-api/
 $ python -m venv env 
 ```
 
