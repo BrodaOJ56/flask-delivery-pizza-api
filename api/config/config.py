@@ -5,17 +5,18 @@ from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
-import os
-import re
+db_name = 'pizza_db'
 
-uri = config("DATABASE_URL")  # or other relevant config var
+
+default_uri = "postgres://{}:{}@{}/{}".format('postgres', 'password', 'localhost:5432', db_name)
+uri = config("DATABASE_URL", default_uri)  # or other relevant config var
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 # rest of connection code using the connection string `uri`
 
 
 class Config:
-    SECRET_KEY = config('SECRET_KEY', 'Secret')
+    SECRET_KEY = config('SECRET_KEY', 'secret')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=30)
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
@@ -36,11 +37,11 @@ class TestConfig(Config):
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI=uri
     SQLALCHEMY_TRACK_MODIFICATIONS=False
-    DEBUG=config('DEBUG',cast=bool)
+    DEBUG=config('DEBUG', False, cast=bool)
 
 
 config_dict = {
     'dev': DevConfig,
-    'production': ProdConfig,
+    'prod': ProdConfig,
     'test': TestConfig
 }
