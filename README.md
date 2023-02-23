@@ -18,7 +18,7 @@
 
 
 <div align="center">
-  <h1>Flask REST API for Pizza Delivery Service and its deployment to Heroku</h1>
+  <h1>Flask REST API For Pizza Delivery Service And Its Deployment To Heroku</h1>
 </div>
 
 <div>
