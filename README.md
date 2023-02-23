@@ -12,13 +12,6 @@
   [![Twitter][twitter-shield]][twitter-url]
 </div>
 
-<!-- Project Logo -->
-<br />
-<div align="center">
-  <a href="https://github.com/BrodaOJ56/flask-delivery-pizza-api">
-    <img src="./Images/Pizza-logo.png" alt="Logo" width="90%" height="30%">
-  </a>
-</div>
 
 <div align="center">
   <h1>Flask REST API for Pizza Delivery Service and its deployment to Heroku</h1>
@@ -185,7 +178,7 @@ This project was made possible by:
 [stars-shield]: https://img.shields.io/github/stars/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
 [stars-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-api/stargazers
 [issues-shield]: https://img.shields.io/github/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
-[issues-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-api/issues
+[issues-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-apiissues
 [license-shield]: https://img.shields.io/github/license/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
 [license-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-api/blob/main/LICENSE.txt
 [twitter-shield]: https://img.shields.io/badge/-@ItzOfficialOJ-1ca0f1?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/ItzOfficialOJ
@@ -193,3 +186,5 @@ This project was made possible by:
 [python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
 [sqlite]: https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white
+[Heroku]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
+
