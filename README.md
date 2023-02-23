@@ -176,7 +176,7 @@ This project was made possible by:
 [forks-shield]: https://img.shields.io/github/forks/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
 [forks-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-api/network/members
 [stars-shield]: https://img.shields.io/github/stars/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
-[issues-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-apiissues
+[stars-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-api/stargazers
 [issues-shield]: https://img.shields.io/github/issues/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
 [issues-url]: https://github.com/BrodaOJ56/flask-delivery-pizza-apiissues
 [license-shield]: https://img.shields.io/github/license/BrodaOJ56/flask-delivery-pizza-api.svg?style=for-the-badge
