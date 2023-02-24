@@ -90,7 +90,7 @@ This Flask API could be a good starting point for someone looking to build a sim
 - Database migrations with Flask-Migrate
 - How to write Unit Tests with Unittest and PyTest
 - Documenting REST APIs with SwaggerUI and Flask-RESTX
-- Error Handling with Werkzeug
+- Error Handling
 - Flask API Deployment via Heroku
 
 <p align="right"><a href="#readme-top">back to top</a></p>
