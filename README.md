@@ -131,11 +131,7 @@ $ export FLASK_APP=api/
 $ echo FLASK_APP
 $ flask run
 ```
-Or 
-``` 
-python runserver.py
-``` 
----
+
 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
